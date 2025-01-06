@@ -1,0 +1,20 @@
+import React, { useState, useEffect } from "react";
+
+const CountryDetails = () => {
+  const [details, setDetails] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+useEffect(){
+  const fetchCountryData = () => {
+    try{
+    const responce = await fetch()
+    const Data = await responce.json();
+    }catch{
+
+    }
+  }
+}
+};
+
+export default CountryDetails;
