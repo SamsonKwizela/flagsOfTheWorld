@@ -10,7 +10,8 @@ useEffect( ()=>{
   const fetchCountryData = async() => {
     try{
     const responce = await fetch('https://restcountries.com/v3.1/all')
-    const Data = await responce.json();
+    const data = await responce.json();
+    console.log(data);
     } catch(error){
     setError(error)
     } finally{
