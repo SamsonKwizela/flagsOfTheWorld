@@ -5,16 +5,20 @@ const CountryDetails = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-useEffect(){
+useEffect( ()=>{
+
   const fetchCountryData = async() => {
     try{
-    const responce = await fetch()
+    const responce = await fetch('https://restcountries.com/v3.1/all')
     const Data = await responce.json();
     }catch{
 
     }
-  }
 }
-};
+
+  }
+)
+
+}
 
 export default CountryDetails;
