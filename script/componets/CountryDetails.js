@@ -6,7 +6,7 @@ const CountryDetails = () => {
   const [error, setError] = useState(null);
 
 useEffect(){
-  const fetchCountryData = () => {
+  const fetchCountryData = async() => {
     try{
     const responce = await fetch()
     const Data = await responce.json();
